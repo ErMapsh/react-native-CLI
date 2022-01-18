@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, View, StyleSheet, TextInput, Button} from 'react-native';
+import {Text, View, StyleSheet, TextInput, Button, StatusBar} from 'react-native';
 
 export default function App() {
   const [text, settext] = useState(null);
@@ -7,6 +7,7 @@ export default function App() {
   return (
     // we can also write style like this, but we need our work clean, so we must need to use stylesheet as option
     <View style={{display: 'flex', flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <StatusBar hidden={true}/>{/* if we dont want status bar then we use statusbar poperty*/}
       <Text>Hello</Text>
       <Text>World</Text>
       <Text>Mahesh</Text>
