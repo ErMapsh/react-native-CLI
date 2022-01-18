@@ -7,7 +7,10 @@ export default function App() {
   return (
     // we can also write style like this, but we need our work clean, so we must need to use stylesheet as option
     <View style={{display: 'flex', flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <StatusBar hidden={true}/>{/* if we dont want status bar then we use statusbar poperty*/}
+      {/* --------if we dont want status bar, means we want full screen then we use display poperty of statusbar--------*/}
+      {/* <StatusBar hidden={true}/>   */}
+      {/* --------if we want status color should change then we can use background poperty of statusbar-------- */}
+      <StatusBar backgroundColor={'gray'}/>
       <Text>Hello</Text>
       <Text>World</Text>
       <Text>Mahesh</Text>
@@ -16,30 +19,4 @@ export default function App() {
 }
 
 // creating styles poperties and using
-const style = StyleSheet.create({
-  Text: {
-    textAlign: 'center',
-    fontWeight: 'bold',
-    fontSize: 55,
-    color: 'black',
-  },
-  container: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'yellow',
-    margin: 55,
-    padding: 15,
-    borderColor: 'black',
-    borderWidth: 2,
-    borderRadius: 14,
-  },
-  border: {
-    borderColor: 'black',
-    borderWidth: 2,
-    borderRadius: 14,
-    padding: 15,
-    margin: 15,
-    backgroundColor: 'white',
-  },
-});
+
