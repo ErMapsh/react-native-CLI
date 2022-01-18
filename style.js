@@ -1,32 +1,33 @@
-import { StyleSheet } from "react-native";
+import {StyleSheet} from 'react-native';
 
-const style = StyleSheet.create({
-    box: {
-      width: 200,
-      height: 200,
-      backgroundColor: 'white', 
-      borderRadius: 50,
-      justifyContent: 'center',
-    },
-    Text: {
-      textAlign: 'center',
-      fontWeight: 'bold',
-      fontSize: 25,
-      color: 'black',
-    },
-    container: {
-      display: 'flex',
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding: 15,
-      backgroundColor: '#11468F',
-    },
-    border: {
-      borderColor: 'black',
-      borderRadius: 50,
-      backgroundColor: 'white',
-    },
-  });
+const styles = StyleSheet.create({
 
-  export {style};
+  container: {
+    display: 'flex',
+    flex: 1,
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    flexDirection: 'row',
+    padding: 15,
+    backgroundColor: '#EEEEEE',
+  },
+  button: {
+    backgroundColor: 'blue',
+    color: 'white',
+    padding: 20,
+    borderRadius:50,
+    fontSize: 30,
+    width: 80,
+    height: 80,
+    textAlign: 'center',
+  },
+  Text: {
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 30,
+    color: 'black',
+  },
+
+});
+
+export {styles};
