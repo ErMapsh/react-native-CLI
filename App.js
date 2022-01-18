@@ -1,16 +1,22 @@
-import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import React, {useState} from 'react';
+import {Text, View, StyleSheet, TextInput, Button} from 'react-native';
 
 export default function App() {
+  const [text, settext] = useState(null);
+  const [info, setinfo] = useState(null)
   return (
-    <View style={style.container}>
-      <Text style={style.Text}>Hello World</Text>
+    // we can also write style like this, but we need our work clean, so we must need to use stylesheet as option
+    <View style={{display: 'flex', flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>Hello</Text>
+      <Text>World</Text>
+      <Text>Mahesh</Text>
     </View>
-  )
+  );  
 }
 
+// creating styles poperties and using
 const style = StyleSheet.create({
-  Text :{
+  Text: {
     textAlign: 'center',
     fontWeight: 'bold',
     fontSize: 55,
@@ -26,6 +32,13 @@ const style = StyleSheet.create({
     borderColor: 'black',
     borderWidth: 2,
     borderRadius: 14,
-
-  }
-})
+  },
+  border: {
+    borderColor: 'black',
+    borderWidth: 2,
+    borderRadius: 14,
+    padding: 15,
+    margin: 15,
+    backgroundColor: 'white',
+  },
+});
