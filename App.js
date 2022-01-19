@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import { View } from 'react-native';
-import InputTextFile from './component/InputTextFile';
+import ArrayList from './component/ArrayList';
 import { styles } from './style';
+// import InputTextFile from './component/InputTextFile';
 // import UseStateHook from './component/UseStateHook';
 
 export default function App() {
@@ -26,7 +27,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       {/* <UseStateHook plus={plus} minus={minus} flag={flag} counter={counter} /> */}
-      <InputTextFile />
+      {/* <InputTextFile /> */}
+      <ArrayList/>
     </View>
   );
 }

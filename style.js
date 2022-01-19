@@ -46,4 +46,20 @@ const styles = StyleSheet.create({
 
 });
 
-export {styles};
+const listStyle = StyleSheet.create({
+  container:{
+    flex: 1,
+    flexDirection: "column"
+  },
+  text:{
+    borderRadius: 5,
+    borderWidth: 1,
+    borderColor: 'black',
+    fontSize: 20,
+    padding: 15, margin: 15,
+    color : 'red',
+    fontWeight: 'bold',
+  }
+})
+
+export {styles, listStyle};
