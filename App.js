@@ -1,9 +1,13 @@
 import React, {useState} from 'react';
 import { View } from 'react-native';
-import ArrayList from './component/ArrayList';
 import { styles } from './style';
+
+//------components--------
+
 // import InputTextFile from './component/InputTextFile';
 // import UseStateHook from './component/UseStateHook';
+// import ArrayList from './component/ArrayList';
+import FlatListCompo from './component/FlatListCompo';
 
 export default function App() {
   const [counter, setcounter] = useState(0);
@@ -28,7 +32,9 @@ export default function App() {
     <View style={styles.container}>
       {/* <UseStateHook plus={plus} minus={minus} flag={flag} counter={counter} /> */}
       {/* <InputTextFile /> */}
-      <ArrayList/>
+      {/* <ArrayList/> */}
+
+      <FlatListCompo/>
     </View>
   );
 }
