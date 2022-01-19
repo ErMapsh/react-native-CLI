@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
-import UseStateHook from './component/UseStateHook';
-
+import { View } from 'react-native';
+import InputTextFile from './component/InputTextFile';
+import { styles } from './style';
+// import UseStateHook from './component/UseStateHook';
 
 export default function App() {
   const [counter, setcounter] = useState(0);
-  const [flag, setflag] = useState(false)
+  const [flag, setflag] = useState(false);
 
   const plus = () => {
     // console.log("Addition");
@@ -16,14 +18,15 @@ export default function App() {
       setcounter(counter - 1);
       setflag(false);
       // console.log("minus");
-    }else{
-      console.log("Value must greater than 1");
+    } else {
+      console.log('Value must greater than 0');
       setflag(true);
     }
   };
   return (
-    <>
-      <UseStateHook plus={plus} minus={minus} flag={flag} counter={counter}/>
-    </>
+    <View style={styles.container}>
+      {/* <UseStateHook plus={plus} minus={minus} flag={flag} counter={counter} /> */}
+      <InputTextFile />
+    </View>
   );
 }

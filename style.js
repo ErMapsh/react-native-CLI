@@ -22,11 +22,27 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   Text: {
+    padding: 20,
     textAlign: 'center',
     fontWeight: 'bold',
     fontSize: 30,
     color: 'black',
   },
+  textinput:{
+    borderWidth: 2,
+    borderColor: 'gray',
+    borderRadius: 50, 
+    padding: 8,
+    width: 300,
+    backgroundColor: 'lightgray',
+  },
+  Inputlabel:{
+    padding: 5,
+    fontSize: 17,
+    fontWeight : 'bold',
+    color: 'black',
+  }
+
 
 });
 
