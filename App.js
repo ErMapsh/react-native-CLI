@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {Text, View, StatusBar, TouchableOpacity} from 'react-native';
-import {styles} from './style';
+import UseStateHook from './component/UseStateHook';
+
 
 export default function App() {
   const [counter, setcounter] = useState(0);
@@ -23,34 +23,7 @@ export default function App() {
   };
   return (
     <>
-    <View style={styles.container}>
-      <StatusBar backgroundColor={'#041562'} />
-
-      {/* minus */}
-      <TouchableOpacity
-        onPress={() => {
-          minus();
-        }}>
-        <View>
-          <Text style={styles.button}>-</Text>
-        </View>
-      </TouchableOpacity>
-
-      <Text style={styles.Text}>{counter}</Text>
-
-      {/* plus */}
-      <TouchableOpacity
-        onPress={() => {
-          plus();
-        }}>
-        <View>
-          <Text style={styles.button}>+</Text>
-        </View>
-      </TouchableOpacity>
-    </View>
-    <View style={styles.container}>
-      {flag &&<Text style={styles.Text}>Value must greater than 1</Text>}
-    </View>
+      <UseStateHook plus={plus} minus={minus} flag={flag} counter={counter}/>
     </>
   );
 }
