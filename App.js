@@ -1,13 +1,15 @@
 import React, {useState} from 'react';
-import { View } from 'react-native';
-import { styles } from './style';
+import {View} from 'react-native';
+import {styles} from './style';
 
 //------components--------
 
 // import InputTextFile from './component/InputTextFile';
 // import UseStateHook from './component/UseStateHook';
 // import ArrayList from './component/ArrayList';
-import FlatListCompo from './component/FlatListCompo';
+// import FlatListCompo from './component/FlatListCompo';
+import TouchableCompo from './component/TouchableCompo';
+
 
 export default function App() {
   const [counter, setcounter] = useState(0);
@@ -34,7 +36,7 @@ export default function App() {
       {/* <InputTextFile /> */}
       {/* <ArrayList/> */}
 
-      <FlatListCompo/>
+      <TouchableCompo />
     </View>
   );
 }

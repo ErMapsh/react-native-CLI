@@ -49,7 +49,8 @@ const styles = StyleSheet.create({
 const listStyle = StyleSheet.create({
   container:{
     flex: 1,
-    flexDirection: "column"
+    flexDirection: "column",
+    justifyContent: "space-evenly"
   },
   text:{
     borderRadius: 5,
@@ -59,7 +60,11 @@ const listStyle = StyleSheet.create({
     padding: 15, margin: 15,
     color : 'red',
     fontWeight: 'bold',
-  }
+    backgroundColor: 'skyblue',
+    flex: 1,
+    justifyContent: 'center'
+  },
+
 })
 
 export {styles, listStyle};
