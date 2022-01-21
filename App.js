@@ -3,12 +3,12 @@ import {View} from 'react-native';
 import {styles} from './style';
 
 //------components--------
-
 // import InputTextFile from './component/InputTextFile';
 // import UseStateHook from './component/UseStateHook';
 // import ArrayList from './component/ArrayList';
 // import FlatListCompo from './component/FlatListCompo';
-import TouchableCompo from './component/TouchableCompo';
+// import TouchableCompo from './component/TouchableCompo';
+import FetchingData from './component/FetchingData';
 
 
 export default function App() {
@@ -35,8 +35,8 @@ export default function App() {
       {/* <UseStateHook plus={plus} minus={minus} flag={flag} counter={counter} /> */}
       {/* <InputTextFile /> */}
       {/* <ArrayList/> */}
-
-      <TouchableCompo />
+      {/* <TouchableCompo /> */}
+      <FetchingData/>
     </View>
   );
 }

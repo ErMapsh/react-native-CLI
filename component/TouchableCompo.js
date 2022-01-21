@@ -18,11 +18,20 @@ export default function FlatListCompo() {
   ]);
 
   const click = Id => {
-    console.log(Id);
+    // console.log(Id);
     setdatalist(PrevData => {
       return PrevData.filter(item => item.id != Id);
     });
   };
+
+  {
+    /*
+    -----Note:-----
+    <TouchableOpacity onPress={hello()}> // This means you are directly invoking the function when the component renders. It is called as soon as the render happens.
+    
+    <TouchableOpacity onPress={() => this.hello()}> // You are referencing a function to React to call later when the actual event happens.
+  */
+  }
 
   return (
     <View style={listStyle.container}>
